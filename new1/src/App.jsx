@@ -35,21 +35,43 @@
 // }}
 
 // export default App
-import { useState } from "react"
+// import { useState } from "react"
 
-function App(){
-  const[display,setdispaly]=useState(false
-  )
-  return(
-    <div>
-      <h1>Toggle in  react js</h1>
+// function App(){
+//   const[display,setdispaly]=useState(false
+//   )
+//   return(
+//     <div>
+//       <h1>Toggle in  react js</h1>
 
-      <button onClick={()=>setdispaly(!display)}>Toggle</button>
-      {
-        display?<h1>Abhi mishra</h1>:null
-      }
+//       <button onClick={()=>setdispaly(!display)}>Toggle</button>
+//       {
+//         display?<h1>Abhi mishra</h1>:null
+//       }
 
       
+//     </div>
+//   )
+// 
+
+const fruit=(name)=>{
+  alert(name)
+}
+
+function App(){
+
+function called(){
+alert("Function called")
+}  
+
+// const fruit=(name)=>{
+//   alert(name)
+// }
+  return(
+    <div>
+      <h1>Event and function call</h1>
+      <button onClick={()=>fruit("Apple")}>Apple</button>
+      <button onClick={()=>fruit("Banana")}>Banana</button>
     </div>
   )
 }
