@@ -1,6 +1,6 @@
 // import User from "./User"
 // import Student from "./Student"
-// import { useState } from "react";
+ import { useState } from "react";
 
 // function App() {
 
@@ -54,25 +54,61 @@
 //   )
 // 
 
-const fruit=(name)=>{
-  alert(name)
-}
-
-function App(){
-
-function called(){
-alert("Function called")
-}  
-
 // const fruit=(name)=>{
 //   alert(name)
 // }
+
+// function App(){
+
+// function called(){
+// alert("Function called")
+// }  
+
+// // const fruit=(name)=>{
+// //   alert(name)
+// // }
+//   return(
+//     <div>
+//       <h1>Event and function call</h1>
+//       <button onClick={()=>fruit("Apple")}>Apple</button>
+//       <button onClick={()=>fruit("Banana")}>Banana</button>
+//     </div>
+//   )
+// }
+
+
+function App(){
+
+  const[gender,setGender]=useState("male")
+  const[city,setCity]=useState("bhopal")
   return(
     <div>
-      <h1>Event and function call</h1>
-      <button onClick={()=>fruit("Apple")}>Apple</button>
-      <button onClick={()=>fruit("Banana")}>Banana</button>
+      <h1>Handle to radio and Dropdown</h1>
+      <h4>Select Gender</h4>
+
+      <input type="radio"onChange={(event)=>setGender(event.target.value)} name="gender" value=
+      "male" checked={gender=="male"} id="male"/>Male
+
+      <label htmlFor="male"></label>
+
+       <input type="radio" onChange={(event)=>setGender(event.target.value)} name="gender" value ="female" checked={gender=="female"} id="female"/>Female
+
+       <label htmlFor="female"></label>
+
+       <h2>Select Gender:{gender}</h2>
+       <hr></hr>
+<select onChange={(event)=>setCity(event.target.value)} defaultValue={"bhopal"}>
+
+<option value="delhi">Delhi</option>
+<option value="bhopal">Bhopal</option>
+<option value="noida">Noida</option>
+
+</select>
+
+<h2>Selct City:{city}</h2>
+
     </div>
   )
+
 }
-export default App
+export default App;
