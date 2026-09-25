@@ -1,8 +1,10 @@
-import User from "./User"
-import Student from "./Student"
-import { useState } from "react";
+// import User from "./User"
+// import Student from "./Student"
+// import { useState } from "react";
 
-function App() {
+
+
+// function App() {
 
 //   let userObject={
 // name:"abhi",
@@ -18,166 +20,279 @@ function App() {
 
 // const [student,setStudent] =useState() 
   
-  return (
+//   return (
 
-    <div>
-      <h1>Toggle Hide and show</h1>
+//     <div>
+//       <h1>Toggle Hide and show</h1>
 
-     {/* {student && <Student name={student}/>}
-     <button onClick={()=>(setStudent("mishra"))}>Update student name</button>
+//      {/* {student && <Student name={student}/>}
+//      <button onClick={()=>(setStudent("mishra"))}>Update student name</button>
 
-      {/* <User  name="ABHI MISHRA" age={20} email="x1233dfdfd@gmail.com" city="Bihar"/> */}
-      {/* <User  user={userObject}/>
-      <User user={userObject2}/> */
-     </div>}
-     )
+//       {/* <User  name="ABHI MISHRA" age={20} email="x1233dfdfd@gmail.com" city="Bihar"/> */}
+//       {/* <User  user={userObject}/>
+//       <User user={userObject2}/> */
+//      </div>}
+//      )
       
-}}
+// }}
 
-export default App
-import { useState } from "react"
+// export default App
+// import { useState } from "react"
 
-function App(){
-  const[display,setdispaly]=useState(false
-  )
-  return(
-    <div>
-      <h1>Toggle in  react js</h1>
+// function App(){
+//   const[display,setdispaly]=useState(false
+//   )
+//   return(
+//     <div>
+//       <h1>Toggle in  react js</h1>
 
-      <button onClick={()=>setdispaly(!display)}>Toggle</button>
-      {
-        display?<h1>Abhi mishra</h1>:null
-      }
+//       <button onClick={()=>setdispaly(!display)}>Toggle</button>
+//       {
+//         display?<h1>Abhi mishra</h1>:null
+//       }
 
       
-    </div>
-  )
+//     </div>
+//   )
 
 
-//-----function called---------
-
-const fruit=(name)=>{
-  alert(name)
-}
-
-function App(){
-
-function called(){
-alert("Function called")
-}  
+// //-----function called---------
 
 // const fruit=(name)=>{
 //   alert(name)
 // }
-  return(
-    <div>
-      <h1>Event and function call</h1>
-      <button onClick={()=>fruit("Apple")}>Apple</button>
-      <button onClick={()=>fruit("Banana")}>Banana</button>
-    </div>
-  )
-}
+
+// function App(){
+
+// function called(){
+// alert("Function called")
+// }  
+
+// // const fruit=(name)=>{
+// //   alert(name)
+// // }
+//   return(
+//     <div>
+//       <h1>Event and function call</h1>
+//       <button onClick={()=>fruit("Apple")}>Apple</button>
+//       <button onClick={()=>fruit("Banana")}>Banana</button>
+//     </div>
+//   )
+// }
 
 
 //-------Handle and dropdown-----
 
-function App(){
+// function App(){
 
-  const[gender,setGender]=useState("male")
-  const[city,setCity]=useState("bhopal")
-  return(
-    <div>
-      <h1>Handle to radio and Dropdown</h1>
-      <h4>Select Gender</h4>
+//   const[gender,setGender]=useState("male")
+//   const[city,setCity]=useState("bhopal")
+//   return(
+//     <div>
+//       <h1>Handle to radio and Dropdown</h1>
+//       <h4>Select Gender</h4>
 
-      <input type="radio"onChange={(event)=>setGender(event.target.value)} name="gender" value=
-      "male" checked={gender=="male"} id="male"/>Male
+//       <input type="radio"onChange={(event)=>setGender(event.target.value)} name="gender" value=
+//       "male" checked={gender=="male"} id="male"/>Male
 
-      <label htmlFor="male"></label>
+//       <label htmlFor="male"></label>
 
-       <input type="radio" onChange={(event)=>setGender(event.target.value)} name="gender" value ="female" checked={gender=="female"} id="female"/>Female
+//        <input type="radio" onChange={(event)=>setGender(event.target.value)} name="gender" value ="female" checked={gender=="female"} id="female"/>Female
 
-       <label htmlFor="female"></label>
+//        <label htmlFor="female"></label>
 
-       <h2>Select Gender:{gender}</h2>
-       <hr></hr>
-<select onChange={(event)=>setCity(event.target.value)} defaultValue={"bhopal"}>
+//        <h2>Select Gender:{gender}</h2>
+//        <hr></hr>
+// <select onChange={(event)=>setCity(event.target.value)} defaultValue={"bhopal"}>
 
-<option value="delhi">Delhi</option>
-<option value="bhopal">Bhopal</option>
-<option value="noida">Noida</option>
+// <option value="delhi">Delhi</option>
+// <option value="bhopal">Bhopal</option>
+// <option value="noida">Noida</option>
 
-</select>
+// </select>
 
-<h2>Selct City:{city}</h2>
+// <h2>Selct City:{city}</h2>
 
-    </div>
-  )
+//     </div>
+//   )
 
-}
+// }
 
-function App(){
+// function App(){
 
-  const userData=[
-    {
-name:"abhi",
-id:1,
-age:"20",
-email:"abhiaaa@gmaill.com"
+//   const userData=[
+//     {
+// name:"abhi",
+// id:1,
+// age:"20",
+// email:"abhiaaa@gmaill.com"
 
- }
- ,
- {
- name:"mishra",
-id:2,
-age:"21",
-email:"mishraaaa@gmaill.com"
- },
+//  }
+//  ,
+//  {
+//  name:"mishra",
+// id:2,
+// age:"21",
+// email:"mishraaaa@gmaill.com"
+//  },
 
- {
- name:"Vikash",
-id:3,
-age:"30",
-email:"latestaa@gmaill.com"
- },
+//  {
+//  name:"Vikash",
+// id:3,
+// age:"30",
+// email:"latestaa@gmaill.com"
+//  },
 
- {
- name:"Avinash",
-id:2,
-age:"40",
-email:"raaaa@gmaill.com"
- }
+//  {
+//  name:"Avinash",
+// id:2,
+// age:"40",
+// email:"raaaa@gmaill.com"
+//  }
 
-  ]
-  return(
-<div>
-  <h1>Lopp in map </h1>
-  <table border={1}>
-    <thead>
-      <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Age</td>
-        <td>City</td>
-      </tr>
+//   ]
+//   return(
+// <div>
+//   <h1>Lopp in map </h1>
+//   <table border={1}>
+//     <thead>
+//       <tr>
+//         <td>Id</td>
+//         <td>Name</td>
+//         <td>Age</td>
+//         <td>City</td>
+//       </tr>
 
       
-    </thead>
-    <tbody>
-      {
-        userData.map((user)=>(
-          <tr>
-            <td>{user.id}</td>
-             <td>{user.name}</td>
-              <td>{user.age}</td>
-               <td>{user.email}</td>
-          </tr>
-        ))
-      }
-    </tbody>
+//     </thead>
+//     <tbody>
+//       {
+//         userData.map((user)=>(
+//           <tr>
+//             <td>{user.id}</td>
+//              <td>{user.name}</td>
+//               <td>{user.age}</td>
+//                <td>{user.email}</td>
+//           </tr>
+//         ))
+//       }
+//     </tbody>
     
-  </table>
-</div>
+//   </table>
+// </div>
+//   )
+// }
+// export default App
+
+import College from "./College"
+
+function App(){
+
+  const collegedata=[
+    {
+      name:"Abhi",
+      branch:"CSE DS",
+      skill:"html css spring servlet jdbc ",
+      Student
+      :[
+        {
+      name:"mishra",
+      age:"20",
+      email:"latest.com"
+        },
+
+         {
+      name:"virat",
+      age:"40",
+      email:"virat123.com"
+        },
+
+         {
+      name:"khabib",
+      age:"20",
+      email:"khabib.com"
+        }
+      ]
+    },
+
+    {
+      name:"vivek",
+      branch:"CSE BS",
+      skill:"html css spring servlet jdbc ",
+
+      Student
+      :[
+        {
+      name:"mishra",
+      age:"20",
+      email:"latest.com" 
+        },
+
+         {
+      name:"virat",
+      age:"40",
+      email:"virat123.com" 
+        },
+
+         {
+      name:"khabib",
+      age:"20",
+      email:"khabib.com"
+        }
+      ]
+    },
+    
+    {
+      name:"Harshit",
+      branch:"CSE",
+      skill:"html css java script ",
+
+      Student
+      :[
+        {
+      name:"mishra",
+      age:"20",
+      email:"latest.com", 
+        },
+
+         {
+      name:"virat",
+      age:"40",
+      email:"virat123.com", 
+        },
+
+         {
+      name:"khabib",
+      age:"20",
+      email:"khabib.com", 
+        }
+      ]
+    }
+    
+  ]
+  return(
+    <div>
+      {/* <h1>Nested Looping</h1> */}
+    {
+      collegedata.map((collegedata,index)=>(
+        <div key={index}>
+          {/* <h1>Name:{collegedata.name}</h1>
+          <ul>
+            <li>
+              <h3>Branch:{collegedata.branch}</h3>
+            </li>
+          
+            <li>
+              <h3>Skill:{collegedata.skill}</h3>
+            </li>
+          </ul> */}
+
+          <College  college={collegedata}/>
+
+        </div>
+      ))
+    }
+    </div>
   )
 }
 export default App
