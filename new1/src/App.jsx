@@ -184,115 +184,165 @@
 // }
 // export default App
 
-import College from "./College"
+// import College from "./College"
+
+// function App(){
+
+//   const collegedata=[
+//     {
+//       name:"Abhi",
+//       branch:"CSE DS",
+//       skill:"html css spring servlet jdbc ",
+//       Student
+//       :[
+//         {
+//       name:"mishra",
+//       age:"20",
+//       email:"latest.com"
+//         },
+
+//          {
+//       name:"virat",
+//       age:"40",
+//       email:"virat123.com"
+//         },
+
+//          {
+//       name:"khabib",
+//       age:"20",
+//       email:"khabib.com"
+//         }
+//       ]
+//     },
+
+//     {
+//       name:"vivek",
+//       branch:"CSE BS",
+//       skill:"html css spring servlet jdbc ",
+
+//       Student
+//       :[
+//         {
+//       name:"mishra",
+//       age:"20",
+//       email:"latest.com" 
+//         },
+
+//          {
+//       name:"virat",
+//       age:"40",
+//       email:"virat123.com" 
+//         },
+
+//          {
+//       name:"khabib",
+//       age:"20",
+//       email:"khabib.com"
+//         }
+//       ]
+//     },
+    
+//     {
+//       name:"Harshit",
+//       branch:"CSE",
+//       skill:"html css java script ",
+
+//       Student
+//       :[
+//         {
+//       name:"mishra",
+//       age:"20",
+//       email:"latest.com", 
+//         },
+
+//          {
+//       name:"virat",
+//       age:"40",
+//       email:"virat123.com", 
+//         },
+
+//          {
+//       name:"khabib",
+//       age:"20",
+//       email:"khabib.com", 
+//         }
+//       ]
+//     }
+    
+//   ]
+//   return(
+//     <div>
+//       {/* <h1>Nested Looping</h1> */}
+//     {
+//       collegedata.map((collegedata,index)=>(
+//         <div key={index}>
+//           {/* <h1>Name:{collegedata.name}</h1>
+//           <ul>
+//             <li>
+//               <h3>Branch:{collegedata.branch}</h3>
+//             </li>
+          
+//             <li>
+//               <h3>Skill:{collegedata.skill}</h3>
+//             </li>
+//           </ul> */}
+
+//           <College  college={collegedata}/>
+
+//         </div>
+//       ))
+//     }
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+// import { useState } from "react"
+// import Counter from "./Counter"
+// function App()
+// {
+
+//   const[Count,setCount]=useState(0)
+//   return(
+//     <div>
+//       <h1>Handle to Props side Effect by using useffect</h1>
+//       <button onClick={()=>setCount(Count+1)}>Counter</button>
+
+//       <Counter Count={Count}/>
+//     </div>
+//   )
+// }
+
 
 function App(){
-
-  const collegedata=[
-    {
-      name:"Abhi",
-      branch:"CSE DS",
-      skill:"html css spring servlet jdbc ",
-      Student
-      :[
-        {
-      name:"mishra",
-      age:"20",
-      email:"latest.com"
-        },
-
-         {
-      name:"virat",
-      age:"40",
-      email:"virat123.com"
-        },
-
-         {
-      name:"khabib",
-      age:"20",
-      email:"khabib.com"
-        }
-      ]
-    },
-
-    {
-      name:"vivek",
-      branch:"CSE BS",
-      skill:"html css spring servlet jdbc ",
-
-      Student
-      :[
-        {
-      name:"mishra",
-      age:"20",
-      email:"latest.com" 
-        },
-
-         {
-      name:"virat",
-      age:"40",
-      email:"virat123.com" 
-        },
-
-         {
-      name:"khabib",
-      age:"20",
-      email:"khabib.com"
-        }
-      ]
-    },
-    
-    {
-      name:"Harshit",
-      branch:"CSE",
-      skill:"html css java script ",
-
-      Student
-      :[
-        {
-      name:"mishra",
-      age:"20",
-      email:"latest.com", 
-        },
-
-         {
-      name:"virat",
-      age:"40",
-      email:"virat123.com", 
-        },
-
-         {
-      name:"khabib",
-      age:"20",
-      email:"khabib.com", 
-        }
-      ]
-    }
-    
-  ]
   return(
-    <div>
-      {/* <h1>Nested Looping</h1> */}
-    {
-      collegedata.map((collegedata,index)=>(
-        <div key={index}>
-          {/* <h1>Name:{collegedata.name}</h1>
-          <ul>
-            <li>
-              <h3>Branch:{collegedata.branch}</h3>
-            </li>
-          
-            <li>
-              <h3>Skill:{collegedata.skill}</h3>
-            </li>
-          </ul> */}
+    <div >
+      <h1  style={{color:"red"}} >  Inline style in react js</h1>
+      <div style={{
+        
+        border:"1px Solid gray",
+        width:"200px",
+     
+        boxShadow:"1px 2px  3px 0px gray",
+        margin:"10px"
+        
 
-          <College  college={collegedata}/>
-
+      }}
+      
+      >
+        <img  style ={{width:"200px"}} src="image1.jpg" alt="" />
+        <div style={{padding:"10px"}}>
+          <h4>Abhishek Mishra</h4>
+          <p>Software Developer </p>
+          <p>B.tech CSE Student</p>
         </div>
-      ))
-    }
+      </div>
     </div>
+
+    
   )
 }
+
 export default App
